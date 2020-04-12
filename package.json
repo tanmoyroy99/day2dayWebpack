@@ -2,12 +2,12 @@
   "name": "simple-react-full-stack",
   "version": "1.0.0",
   "description": "Boilerplate to build a full stack web application using React, Node.js, Express and Webpack.",
-  "main": "src/server/index.js",
+  "main": "server/server.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "npm run build && node src/server/index.js",
+    "start": "npm run build && node server/server.js",
     "start-ui": "webpack-dev-server --mode development --devtool inline-source-map --hot",
-    "start-api": "nodemon src/server/index.js",
+    "start-api": "nodemon server/server.js",
     "dev": "concurrently \"npm run start-api\" \"npm run start-ui\""
   },
   "author": "Sandeep Raveesh",
